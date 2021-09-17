@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTC-8"/>
+        <title>forms</title>
+    </head>
+    <body>
+        <center>
+        <h1>forms</h1>
+            <!-- <form action="lugar al cual se va la info"></form> -->
+            <!-- <form method="GET"></form> metodo por defecto (GET) y muestra
+                la info en el buscador y el POST los oculta
+            <form method="POST"></form> metodos para ejercer la acción -->
+        
+        <hr/>
+
+            <form>
+                <p>
+                    <label for="name"><b>name:</b></label> 
+                    <input type="text" name="name"/>
+                    <!-- "name:" lo que el usario ve 
+                    for= y name= (lugar al que se va ir en el backend) -->
+                
+                    <label for="mail">mail:</label>
+                    <input type="email" name="mail"/> 
+                    <!-- verifica que tenga un formato email (type), 
+                    pero no hace una validacion completa --> 
+                </p>
+                
+                <p>
+                    <label for=password>password</label>
+                    <input type="password" name="password"/>
+                    <!-- "type=" el tipo de dato que se muestra, en este caso
+                    puntitos y no texto -->
+
+                    <label for=birth><b>birth date:</b></label>
+                    <input type="date" name="birth"/>  
+                </p>
+                
+                <hr/>
+
+                <p>
+                    <label for="emotion"><b>how do u feel:</b></label>
+                        <i>sad</i>
+                        <input type="range" name="emotion" id=""/> 
+                        <i>happy</i> 
+                
+                    <label for="sex"><b>sex:</b></label>
+                    <input type="radio" name="sex" id=""/> female
+                    <input type="radio" name="sex" id=""/> male  
+                </p>
+            
+                   <label for="color">favorite color:</label>
+                   <select name="color">
+                       <option value="1">blue</option>
+                       <option value="2">red</option>
+                       <option value="3">yellow</option>
+                   </select>
+                
+                <hr/>   
+                
+                <p>
+                   <label for="about">
+                        <legend>
+                            <b>about u:</b>
+                        </legend>
+                    </label>
+                   <textarea name="about" rows="10" cols="64"></textarea>
+                </p>
+
+                <hr/>
+
+                <input type="submit" value="safe data"/>
+                <button type="submit">safe data</button>
+
+            </form>
+        </center>
+    </body>
+</html>
